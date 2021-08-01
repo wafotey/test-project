@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: baseline;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid rgb(190, 188, 188);
+}
+.navbar li{
+  margin-left: 15px;
+}
+.navbar li:nth-child(3){
+  margin-right: auto;
+  margin-left: auto;
+}

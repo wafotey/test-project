@@ -1,0 +1,48 @@
+<app-navbar (menuItemClicked)="toggleSideBar($event)"></app-navbar>
+
+<mat-sidenav-container>
+  <mat-sidenav [opened]="isVisible" mode="side" #sidenav>
+    <div class="sidebar-items">
+      <div [routerLink]="['/home']" routerLinkActive="active">
+        <mat-icon class="home items">home</mat-icon>
+        <div>Home</div>
+      </div>
+      <div [routerLink]="['/reports']"  routerLinkActive="active">
+        <mat-icon class="reports items">poll</mat-icon>
+        <div>Reports</div>
+      </div>
+      <div [routerLink]="['/transactions']"  routerLinkActive="active">
+        <mat-icon class="transactions items">receipt_long</mat-icon>
+        <div>Transactions</div>
+      </div>
+      <div [routerLink]="['/items']"  routerLinkActive="active">
+        <mat-icon class="tag items">sell</mat-icon>
+        <div>Items</div>
+      </div>
+      <div [routerLink]="['/customers']"  routerLinkActive="active">
+        <mat-icon class="contact items">perm_contact_calendar</mat-icon>
+        <div>Customer</div>
+      </div>
+
+      <div [routerLink]="['/teams']"  routerLinkActive="active">
+        <mat-icon class="group items">groups</mat-icon>
+        <div>Teams</div>
+      </div>
+      <div [routerLink]="['/account-settings']"  routerLinkActive="active">
+        <mat-icon class="settings items">settings</mat-icon>
+        <div class="settings-text">Account & Settings</div>
+      </div>
+      <div [routerLink]="['/orders']"  routerLinkActive="active">
+        <mat-icon class="bag items">shop</mat-icon>
+        <div>Orders</div>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <div class="container" [@slideInAnimation]="o.isActivated ? o.activatedRoute : ''"> 
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

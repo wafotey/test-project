@@ -1,0 +1,15 @@
+{
+    "menu": {
+        "home": "Home",
+        "reports": "Reports",
+        "transactions": "Transactions",
+        "items": "Catalogs",
+        "customers": "Customers",
+        "account-settings": "Account & Settings",
+        "teams": "Teams",
+        "orders": "Orders",
+        "application": "Applications",
+        "api-explorer" : "Api Explorer",
+        "documentation": "Documentations"
+    }
+}

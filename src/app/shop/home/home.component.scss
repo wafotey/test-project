@@ -1,0 +1,30 @@
+
+.content{
+  margin: 20px 0 0 30px;
+}
+.sales{
+  display: flex;
+}
+.sales > div {
+  width: 300px;
+  margin-right: 10px;
+  padding: 30px 0 0px 15px;
+  height: 80px;
+  border: 1px solid #eee;
+  box-shadow:  2px 2px #eee;
+}
+.for-sale{
+  width: 630px;
+  height: 100px;
+  border: 1px solid #eee;
+  box-shadow:  2px 2px #eee;
+  margin-top: 10px;
+  padding: 30px 0 0px 15px;
+}
+.for-sale > div {
+   margin-bottom: 10px;
+}
+.today{
+  color: #7f7676;
+  font-size: large;
+}

@@ -1,0 +1,36 @@
+<ul>
+  <li [routerLink]="['/documentation']" routerLinkActive="active">Documentation</li>
+  <li [routerLink]="['/technical-reference']" routerLinkActive="active">Technical Reference</li>
+  <li [routerLink]="['/api-explorer']" routerLinkActive="active">API Explorer</li>
+  <li ><i class="fa fa-search"></i></li>
+  <li [routerLink]="['/application']" routerLinkActive="active">Shack15</li>
+</ul>
+<hr />
+
+<div class="content-header">
+  <div>
+    <h1>Applications</h1>
+  </div>
+  <div class="app-info">Each application provides a unique set of API keys and configuration settings needed for making
+    requests to Square APIs.</div>
+</div>
+
+<div class="app-content">
+  <div class="box">
+    <div class="in-box">
+      <div>App</div>
+      <div>App ID: 3490kfjso3w29ur9w</div>
+      <div class="btn" [routerLink]="['/home']" routerLinkActive="active">Open</div>
+    </div>
+    <div class="in-box">
+      <div>Shack15</div>
+      <div>App ID: 3490kfjso3w29ur9w</div>
+      <div class="btn" [routerLink]="['/home']" routerLinkActive="active">Open</div>
+    </div>
+    <div class="box">
+      <div class="in-box default">
+        <mat-icon>add</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>
