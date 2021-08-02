@@ -4,6 +4,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DashboardComponent } from './shop/dashboard/dashboard.component';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'application', pathMatch: 'full' },
   { path:  '', component: DashboardComponent, children: [
     {path: 'home', loadChildren: () => import('./shop/home/home-routing.module').then(m => m.HomeRoutingModule)},
     {path: 'reports', loadChildren: () => import('./shop/reports/report-routing.module').then(m => m.ReportsRoutingModule)},
@@ -17,7 +18,7 @@ export const routes: Routes = [
   { path: 'application', loadChildren: () => import('./application/application-routing.module').then( m => m.ApplicationRoutingModule)},
   { path: 'api-explorer', loadChildren: () => import('./api-explorer/api-explorer-routing.module').then( m => m.ApiExplorerRoutingModule)},
   { path: 'documentation', loadChildren: () => import('./documentation/documentation-routing.module').then( m => m.DocumentationRoutingModule)},
-  { path: '**', component: PageNotFoundComponent}
+  { path: '**', component: PageNotFoundComponent} 
 ];
 
 @NgModule({
