@@ -6,3 +6,4 @@ app.get('/*',function(req,res){
     res.sendFile(path.join(__dirname + '/dist/test-project/index.html'));
 });
 app.listen(process.env.PORT || 8080);
+console.log("Build started ...")
